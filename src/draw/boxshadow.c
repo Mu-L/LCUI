@@ -77,13 +77,13 @@ static uchar_t gradient_compute(gradient_t *g, double t, int val)
 	return (uchar_t)(val >> 8);
 }
 
-static INLINE int BoxShadow_GetWidth(const LCUI_BoxShadow *shadow,
+INLINE int BoxShadow_GetWidth(const LCUI_BoxShadow *shadow,
 				     int content_width)
 {
 	return content_width + SHADOW_WIDTH(shadow) * 2;
 }
 
-static INLINE int BoxShadow_GetHeight(const LCUI_BoxShadow *shadow,
+INLINE int BoxShadow_GetHeight(const LCUI_BoxShadow *shadow,
 				      int content_height)
 {
 	return content_height + SHADOW_WIDTH(shadow) * 2;
